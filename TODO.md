@@ -12,15 +12,16 @@ commands and their arguments, reflecting which
 commands a student or team has executed.
 
 For example:
-[terminal identifier,command+args,command return value]
+[timestamp,terminal identifier,command+args,command return value]
 
 ```
-terminal1,sudo tcpdump -i en0 -n -v
-terminal2,iptables -L,ret
-terminal3,ssh alice,ret
-terminal3,exit,ret
-terminal2,iptables -F,ret
-terminal2,sudo iptables -F,ret
-terminal3,ssh alice,ret
-terminal1,Ctrl+C,ret
+1559159730,terminal1,man iptables,ret
+1559159795,terminal1,sudo tcpdump -i en0 -n -v
+1559159796,terminal2,iptables -L,ret
+1559159798,terminal3,ssh alice,ret
+1559159801,terminal3,exit,ret
+1559159810,terminal2,iptables -F,ret
+1559159845,terminal2,sudo iptables -F,ret
+1559159850,terminal3,ssh alice,ret
+1559159855,terminal1,Ctrl+C,ret
 ```
