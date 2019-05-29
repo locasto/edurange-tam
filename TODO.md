@@ -5,7 +5,7 @@
 2. Create PoC recognizer system
 3. Write design notes for TAM PoC
 4. Begin specification of tagged assessment model event sequences for different categories: 
-(NOVICE, NON-DOMAIN PROFESSIONAL, DOMAIN PROFESSIONAL, EXPERT)
+(NOVICE, NON-DOMAIN PROFESSIONAL, DOMAIN PROFESSIONAL, EXPERT). Perform a “paper execution” of the scenario at three anticipated levels of expertise: beginner, professional, expert. Document paths.
 
 Assume input stream is a sequence of Unix 
 commands and their arguments, reflecting which 
