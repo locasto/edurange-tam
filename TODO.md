@@ -64,7 +64,7 @@ Are there other broad signals we expect beginners, professionals, and experts to
 
 Need a data generator bot.
 
->>>
+```
 set_challenge(EDURange.FIREWALL); //specifiies PROBABILITY_NEW and CMDS set.
 while (true)
    terminal = select_existing_or_new_terminal(PROBABILITY_NEW);
@@ -72,4 +72,4 @@ while (true)
    args = generate_args(command);
    terminal.execute(command); //EDURange logs event and output
    bot.record(timestamp, terminal.id, command, command.args, command.ret);
->>>
+```
