@@ -58,3 +58,18 @@ Are there other broad signals we expect beginners, professionals, and experts to
 8. kernel log messages
 9. pcaps of traffic
 10. application logs (e.g., ssh -vvv output)
+
+
+# Bot
+
+Need a data generator bot.
+
+>>>
+set_challenge(EDURange.FIREWALL); //specifiies PROBABILITY_NEW and CMDS set.
+while (true)
+   terminal = select_existing_or_new_terminal(PROBABILITY_NEW);
+   command = select_command(draw_from_set(CMDS));
+   args = generate_args(command);
+   terminal.execute(command); //EDURange logs event and output
+   bot.record(timestamp, terminal.id, command, command.args, command.ret);
+>>>
